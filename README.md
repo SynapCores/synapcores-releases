@@ -9,7 +9,7 @@ This repository hosts the public CE binaries and their SHA-256 checksums. → **
 Linux (x86_64, aarch64) and macOS on Apple Silicon. On Windows, run it inside a WSL2 (Ubuntu) terminal.
 
 ```bash
-curl -fsSL https://get.synapcores.com | sh
+curl -fsSL https://get.synapcores.com | SYNAPCORES_REF=github-releases sh
 ```
 
 The installer detects your OS and architecture, verifies the checksum, installs the binary and a service (systemd on Linux, launchd on macOS), and downloads the local models. When it finishes it prints your local URL and first-boot login.
